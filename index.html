@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trade Flow Logistics — Logistics & Freight Forwarding</title>
+  <meta name="description" content="Reliable global freight forwarding — air, sea, road and customs clearance." />
+  <link rel="icon" href="img/TF Circle.png" />
+  <!-- font (replace if you prefer) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top contact bar -->
+  <div class="topbar" role="region" aria-label="Top contact bar">
+    <div class="container topbar-inner">
+      <div class="top-left">
+        <a href="tel:+916292279213" class="top-link">📞 +91 62922 79213</a>
+      </div>
+      <div class="top-right">
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <img src="img/Trade Flow (1).png" alt="Company logo" class="logo" />
+        <span class="brand-name">Trade Flow Logistics</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn-sm">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero" role="region" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Global logistics, local care</h1>
+          <p class="lead">Air, Sea, Road and Customs clearance — reliable end-to-end freight forwarding tailored to your business.</p>
+          <div class="cta-row">
+            <a href="#contact" class="btn large">Get a Quote</a>
+            <a href="#services" class="btn ghost">Our Services</a>
+          </div>
+
+          <!-- quick tracking input (UI only) -->
+          <!-- <form id="quick-track" class="track-form" aria-label="Quick track form">
+            <label for="tracking-number" class="sr-only">Tracking Number</label>
+            <input id="tracking-number" name="tracking" type="text" placeholder="Enter tracking / AWB number" />
+            <button type="submit" class="btn small">Track</button>
+            <p id="track-status" aria-live="polite" class="muted"></p>
+          </form> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Our Services</h2>
+        <p class="section-sub">Flexible logistics solutions — tailored, transparent, and on-time.</p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Air Freight</h3>
+            <p>Fast and secure air cargo solutions for urgent shipments and time-sensitive goods.</p>
+          </article>
+
+          <article class="card">
+            <h3>Sea Freight</h3>
+            <p>Competitive ocean freight with FCL/LCL options and global network partners.</p>
+          </article>
+
+          <article class="card">
+            <h3>Road Transport</h3>
+            <p>Domestic and cross-border road haulage with door-to-door delivery options.</p>
+          </article>
+
+          <article class="card">
+            <h3>Customs Clearance</h3>
+            <p>End-to-end customs handling, documentation and compliance support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Why choose us -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 id="about-heading">Why choose Pacific Freight</h2>
+          <ul class="bullets">
+            <li>Global network & local teams</li>
+            <li>Transparent pricing and tracking</li>
+            <li>Experienced customs clearance</li>
+          </ul>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <img src="img/port.jpg" alt="Port and logistics" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (short) -->
+    <section class="section testimonials" aria-labelledby="testi-heading">
+      <div class="container">
+        <h2 id="testi-heading">Client Feedback</h2>
+        <div class="testi-grid">
+          <blockquote class="testi">"Quick, reliable and transparent — great partner for our imports."</blockquote>
+          <blockquote class="testi">"Excellent customs support and timely deliveries."</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Quote form -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-heading">Get a Quote</h2>
+          <p>Tell us about your shipment and we’ll get back with a tailored solution.</p>
+
+          <ul class="contact-info">
+            <li><strong>Phone:</strong> +91 62922 79213</li>
+            <li><strong>Email:</strong> vish.sourav@gmail.com</li>
+            <li><strong>Office:</strong> 54A, Kalikrishna Tagore Street. Kolkata 700007</li>
+          </ul>
+        </div>
+
+        <form id="contact-form" name="quote" method="POST" data-netlify="true" class="form-optimized">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input id="email" name="email" type="email" placeholder="your@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+91 XXXXX XXXXX" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Type *</label>
+            <select id="service" name="service" required>
+              <option value="">-- Select a service --</option>
+              <option value="air">Air Freight</option>
+              <option value="sea">Sea Freight</option>
+              <option value="road">Road Transport</option>
+              <option value="customs">Customs Clearance</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Shipment Details *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your shipment, origin, destination, weight, etc." required></textarea>
+          </div>
+
+          <button type="submit" class="btn large form-submit">Request Quote</button>
+          <p id="form-result" aria-live="polite" class="muted form-message" hidden></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand-footer"><img src="logo-placeholder.svg" alt="" class="logo-sm" />Trade Flow</p>
+        <p class="muted">© <span id="year"></span> Trade Flow — All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <p class="muted">Follow</p>
+        <nav aria-label="Social">
+          <a href="#" class="top-link">LinkedIn</a>
+          <a href="#" class="top-link">Facebook</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
