@@ -75,6 +75,11 @@ body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:anti
 .cards{display:grid;grid-template-columns:1fr;gap:1rem}
 .card{background:var(--surface);padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(12,20,40,0.04)}
 
+/* services visual image */
+.services-visual{margin-top:2.5rem;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(12,20,40,0.1);animation:slideInRight 0.8s ease-out}
+.services-visual img{width:100%;height:auto;max-height:500px;object-fit:cover;display:block;transition:transform 0.4s ease}
+.services-visual:hover img{transform:scale(1.03)}
+
 /* about grid */
 .about-grid{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
 .bullets{list-style:disc;margin-left:1.25rem;color:var(--muted)}
@@ -82,6 +87,11 @@ body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:anti
 /* testimonials */
 .testi-grid{display:grid;grid-template-columns:1fr;gap:.75rem}
 .testi{background:#fbfbff;padding:.9rem;border-radius:8px}
+
+/* testimonials visual image */
+.testi-visual{margin-top:2rem;border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(12,20,40,0.1);animation:fadeInUp 0.8s ease-out 0.4s both}
+.testi-visual img{width:100%;height:auto;max-height:450px;object-fit:cover;display:block;transition:transform 0.4s ease}
+.testi-visual:hover img{transform:scale(1.03)}
 
 /* contact layout */
 .section.contact{background:#f9fafc;padding:3rem 0}
@@ -124,6 +134,16 @@ body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:anti
 .muted{color:var(--muted);font-size:.95rem}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
+/* Mobile menu styling */
+.mobile-menu{animation:slideInLeft 0.4s ease-out}
+.mobile-menu ul{display:flex;flex-direction:column;gap:0.5rem;list-style:none;margin:0;padding:1rem;background:#f9fafb}
+.mobile-menu li{border-bottom:1px solid #e5e7eb}
+.mobile-menu li:last-child{border-bottom:none}
+.mobile-menu a{display:block;padding:0.9rem 0;color:var(--text);text-decoration:none;font-weight:500;font-size:0.95rem;transition:all 0.3s ease}
+.mobile-menu a:hover{color:var(--accent);padding-left:0.5rem}
+.mobile-menu .btn-sm{display:block;width:100%;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:0.8rem 1rem;font-weight:700;text-align:center;font-size:0.95rem;box-shadow:0 4px 12px rgba(11,92,255,0.2);margin-top:0.5rem;transition:all 0.3s ease}
+.mobile-menu .btn-sm:hover{background:var(--accent-2);transform:translateY(-2px);box-shadow:0 6px 20px rgba(11,92,255,0.3)}
+
 /* Larger screens (tablet, desktop) */
 @media (min-width:700px){
   .nav{display:block}
@@ -132,8 +152,10 @@ body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:anti
 
   .hero-inner{grid-template-columns:1fr 1fr;gap:2rem}
   .cards{grid-template-columns:repeat(2,1fr)}
+  .services-visual{max-height:600px}
   .about-grid{grid-template-columns:1fr 1fr}
   .testi-grid{grid-template-columns:repeat(2,1fr)}
+  .testi-visual{max-height:500px}
   .contact-grid{grid-template-columns:1fr 1fr}
   .footer-inner{flex-direction:row;justify-content:space-between;align-items:center}
 }
